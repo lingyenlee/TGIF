@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
+    <title>SENATE MEMBERS</title>
+</head>
+
+<body>
+    <!--START header img-->
+    <header>
+        <div class="overlay">
+            <h1>Transparent Government in Fact</h1>
+            <p>Creating Trust &amp; Accountability</p>
+        </div>
+        <div>
+            <img class="logo-img" src="logo.png" alt="TGIF logo">
+        </div>
+    </header>
+    <!--END header img-->
+    <!-- START Navbar content -->
+    <div class="jumbotron">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" id="myNav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">TGIF</a>
+                </li>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONGRESS 113<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">SENATE</a></li>
+                        <li><a href="house-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ATTENDANCE<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-attendance-starter-page.html">SENATE</a></li>
+                        <li><a href="house-attendance-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">PARTY LOYALTY <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-party-loyalty-starter-page.html">SENATE</a></li>
+                        <li><a href="house-party-loyalty-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="mailto:info@tgif.net">
+                        <span class="glyphicon glyphicon-envelope"></span> info&#64;tgif.net
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Navbar content -->
+
+        <!--Table container-->
+        <!-- START Main container-->
+        <div class="container">
+
+            <div>
+                <h2>Senators</h2>
+                <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+
+                <!--START filter content-->
+                <div class="row">
+                    <div>
+                        <p id="party-filter">Filter by Party:
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="D" id="D" class="filter" name="chkb">Democrat
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="R" id="R" class="filter" name="chkb">Republican
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="I" id="I" class="filter" name="chkb">Independent
+                            </label>
+                        </p>
+                        <p>Filter by State:
+                            <select class="selectpicker" id="state-filter">
+                                <option value="ALL">--ALL--</option>
+                            </select>
+                        </p>
+                    </div>
+                    <!--END filter content-->
+
+                    <!--START table content-->
+                    <div class="container" id="app">
+                        <table class="table" id="member-table">
+                            <thead class="table thead-light">
+                                <tr>
+                                    <th class="col-lg-1">Name</th>
+                                    <th class="col-lg-1 text-center">Party</th>
+                                    <th class="col-lg-1 text-center">State</th>
+                                    <th class="col-lg-1 text-center">Senority</th>
+                                    <th class="col-lg-1 text-center">Percentage of votes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END Main container-->
+        <!--START Footer -->
+        <div class="myFooter">
+            <footer>
+                <!-- Copyright -->
+                <a>© 2016 TGIF | All Rights Reserved</a>
+                <!-- Copyright -->
+            </footer>
+        </div>
+    </div>
+    <!-- END Footer -->
+   <!-- <script src="senate-house_attendance_statistics.js"></script> -->
+
+   <script src="statistics.js"></script>
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--function for sticky nav bar-->
+   
+</body>
+
+</html>

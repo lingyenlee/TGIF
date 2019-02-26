@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.overlay {
+  background-image: url("flag.png");
+  height: 220px;
+  background-size: cover;
+  opacity: 0.9;
+  top: 0px;
+}
+
+.overlay h1 {
+  font-family: "Playfair display";
+  font-size: 45px;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  mix-blend-mode: screen;
+  padding: 5px 20px 30px 20px;
+  background-color: ghostwhite;
+  color: #000;
+  border-radius: 10px;
+}
+
+.jumbotron {
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.logo-img {
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  left: 60px;
+  height: 200px;
+  width: 200px;
+}
+
+.overlay p {
+  color: black;
+  position: absolute;
+  top: 120px;
+  left: 520px;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 20px;
+}
+
+.jumbotron p {
+  font-size: 18px;
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+
+.btn.btn-primary {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #234356;
+  margin-bottom: 50px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+  padding-left: 50px;
+}
+
+/* Links inside the navbar */
+.nav.navbar-nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-right {
+  padding-right: 40px;
+}
+
+.nav.navbar-nav li a:hover {
+  background-color: #65080f;
+  color: white;
+}
+
+.dropdown-menu li a {
+  background-color: #234356;
+  color: black;
+}
+
+.home-img {
+  margin-top: 70px;
+  margin-bottom: 120px;
+  width: 400px;
+  height: 300px;
+}
+
+.myFooter a {
+  color: white;
+  margin-bottom: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+}
+
+.myFooter {
+  text-align: center;
+  background: #234356;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* sticky nav bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.row p {
+  font-weight: bold;
+}
+
+select {
+  font-weight: normal;
+}
+
+.row p {
+  display: inline-block;
+  margin-left: 175px;
+  font-size: 16px;
+}
+
+#member-table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+  text-align: center;
+}
+
+/* loader */
+
+#lds-dual-ring {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+}
+
+#lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid red;
+  border-color: #65080f transparent #65080f transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

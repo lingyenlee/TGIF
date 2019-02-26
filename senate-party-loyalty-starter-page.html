@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
+    <title>SENATE LOYALTY</title>
+</head>
+
+<body>
+    <!--START header img-->
+    <header>
+        <div class="overlay">
+            <h1>Transparent Government in Fact</h1>
+            <p>Creating Trust &amp; Accountability</p>
+        </div>
+        <div>
+            <img class="logo-img" src="logo.png" alt="TGIF logo">
+        </div>
+    </header>
+    <!--END header img-->
+    <!-- START Navbar content -->
+    <div class="jumbotron">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" id="myNav">
+            <ul class="nav navbar-nav">
+            <li>
+            <a  href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">TGIF</a>
+            </li>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONGRESS 113<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-starter-page.html">SENATE</a></li>
+                        <li><a href="house-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ATTENDANCE<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-attendance-starter-page.html">SENATE</a></li>
+                        <li><a href="house-attendance-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">PARTY LOYALTY <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">SENATE</a></li>
+                        <li><a href="house-party-loyalty-starter-page.html">HOUSE</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="mailto:info@tgif.net">
+                        <span class="glyphicon glyphicon-envelope"></span> info&#64;tgif.net
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Navbar content -->
+
+        <!--START Table container-->
+        <div class="container">
+            <div class="col-sm-6">
+                <h3>Party Loyalty</h3>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+            </div>
+            <!-- Table attendance-->
+            <div class="col-sm-6">
+                <h3 class="text-center">Senate at a glance</h3>
+                <table class="table">
+                    <thead class="table thead-light">
+                        <tr>
+                            <th>Party</th>
+                            <th class="text-center">Number of Reps</th>
+                            <th class="text-center">% Voted with Prty</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendance">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <!-- TABLE least loyal-->
+            <div class="col-sm-6">
+                <h3 class="text-center">Least Loyal (Bottom 10% of Party)</h3>
+                <table class="table">
+                    <thead class="table thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th class="text-center">Number Party Votes</th>
+                            <th class="text-center">% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="least_loyal">
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- TABLE most loyal -->
+            <div class="col-sm-6">
+                <h3 class="text-center">Most Loyal (Top 10% of Party)</h3>
+                <table class="table">
+                    <thead class="table thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th class="text-center">Number Party Votes</th>
+                            <th class="text-center">% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="most_loyal">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--START Footer -->
+        <div class="myFooter">
+            <footer>
+                <!-- Copyright -->
+                <a>© 2016 TGIF | All Rights Reserved</a>
+                <!-- Copyright -->
+            </footer>
+        </div>
+        <!-- END Footer -->
+    </div>
+        <script src="statistics.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+</body>
+
+</html>
